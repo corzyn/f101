@@ -1,0 +1,11 @@
+Utworzenie kontenera:
+docker run -d \
+  --name dle-game \
+  -p 27018:27017 \
+  mongo:latest
+
+Sprawdzenia dzialnia:
+docker ps
+
+wejście w kontener:
+docker exec -it dle-game mongo
